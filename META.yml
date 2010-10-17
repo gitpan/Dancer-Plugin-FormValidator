@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Dancer-Plugin-FormValidator
-version:            0.2
+version:            0.3
 abstract:           easy validates user input (usually from an HTML form) 
 author:
     - Natal Ngétal <hobbestigrou@erakis.im>
