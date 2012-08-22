@@ -1,8 +1,11 @@
+Build.PL
 Changes
+INSTALL
+LICENSE
 MANIFEST
+META.yml
 Makefile.PL
 README
-lib/Dancer/Plugin/FormValidator.pm 
+dist.ini
+lib/Dancer/Plugin/FormValidator.pm
 t/00-load.t
-TODO
-META.yml                                 Module meta-data (added by MakeMaker)

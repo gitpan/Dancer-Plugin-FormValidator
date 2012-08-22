@@ -1,30 +1,13 @@
-Dancer-Plugin-FormValidator
 
-A plugin for Dancer applications, easy validates user input (usually from an HTML FormValidator
 
-See http://www.perldancer.org/ for details on Dancer.
+This archive contains the distribution Dancer-Plugin-FormValidator,
+version 1.122350:
 
-To install this module, run the following commands:
+  Easy validates user input (usually from an HTML form) based on input profile for Dancer applications.
 
-    perl Makefile.PL
-    make
-    make test
-    make install
+This software is copyright (c) 2012 by Natal Ngétal.
 
-SUPPORT AND DOCUMENTATION
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
-After installing, you can find documentation for this module with the
-perldoc command.
-
-    perldoc Dancer::Plugin::FormValidator
-
-LICENSE AND COPYRIGHT
-
-Copyright (C) 2010 Natal Ngétal
-
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
-
-See http://dev.perl.org/licenses/ for more information.
 
