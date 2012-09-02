@@ -3,7 +3,10 @@ abstract: 'Easy validates user input (usually from an HTML form) based on input 
 author:
   - 'Natal Ngétal'
 build_requires:
+  Dancer::Test: 0
+  Data::Dumper: 0
   Module::Build: 0.3601
+  Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
   Module::Build: 0.3601
@@ -16,4 +19,11 @@ meta-spec:
 name: Dancer-Plugin-FormValidator
 requires:
   Dancer: 1.2001
-version: 1.122350
+  Dancer::Exception: 0
+  Dancer::Plugin: 0
+  Data::FormValidator: 0
+  Module::Load: 0
+  perl: 5.010
+  strict: 0
+  warnings: 0
+version: 1.122460

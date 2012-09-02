@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-
+use 5.010;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -12,7 +12,10 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Easy validates user input (usually from an HTML form) based on input profile for Dancer applications.",
   "AUTHOR" => "Natal Ng\303\251tal",
   "BUILD_REQUIRES" => {
-    "Module::Build" => "0.3601"
+    "Dancer::Test" => 0,
+    "Data::Dumper" => 0,
+    "Module::Build" => "0.3601",
+    "Test::More" => 0
   },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30",
@@ -23,9 +26,15 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Dancer::Plugin::FormValidator",
   "PREREQ_PM" => {
-    "Dancer" => "1.2001"
+    "Dancer" => "1.2001",
+    "Dancer::Exception" => 0,
+    "Dancer::Plugin" => 0,
+    "Data::FormValidator" => 0,
+    "Module::Load" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  "VERSION" => "1.122350",
+  "VERSION" => "1.122460",
   "test" => {
     "TESTS" => "t/*.t"
   }

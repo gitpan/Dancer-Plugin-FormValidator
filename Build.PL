@@ -7,7 +7,10 @@ use Module::Build 0.3601;
 
 my %module_build_args = (
   "build_requires" => {
-    "Module::Build" => "0.3601"
+    "Dancer::Test" => 0,
+    "Data::Dumper" => 0,
+    "Module::Build" => "0.3601",
+    "Test::More" => 0
   },
   "configure_requires" => {
     "ExtUtils::MakeMaker" => "6.30",
@@ -18,13 +21,20 @@ my %module_build_args = (
     "Natal Ng\303\251tal"
   ],
   "dist_name" => "Dancer-Plugin-FormValidator",
-  "dist_version" => "1.122350",
+  "dist_version" => "1.122460",
   "license" => "perl",
   "module_name" => "Dancer::Plugin::FormValidator",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "Dancer" => "1.2001"
+    "Dancer" => "1.2001",
+    "Dancer::Exception" => 0,
+    "Dancer::Plugin" => 0,
+    "Data::FormValidator" => 0,
+    "Module::Load" => 0,
+    "perl" => "5.010",
+    "strict" => 0,
+    "warnings" => 0
   },
   "script_files" => []
 );

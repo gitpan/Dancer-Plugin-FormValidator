@@ -8,7 +8,7 @@
 #
 package Dancer::Plugin::FormValidator;
 {
-  $Dancer::Plugin::FormValidator::VERSION = '1.122350';
+  $Dancer::Plugin::FormValidator::VERSION = '1.122460';
 }
 
 use strict;
@@ -30,13 +30,13 @@ register_exception('ProfileInvalidFormat',
     message_pattern => "Unknown format use yml, json or pl: %s"
 );
 
-my $settings = plugin_setting;
 my $dfv;
 my $results;
 
 
 register form_validator_error => sub {
-    $results = _dfv_check(@_);
+    $results     = _dfv_check(@_);
+    my $settings = plugin_setting;
 
     if ( $results->has_invalid || $results->has_missing ) {
         if ( $settings->{halt} ) {
@@ -67,7 +67,8 @@ register dfv => sub {
 register_plugin;
 
 sub _error_return {
-    my $reason = shift;
+    my $reason   = shift;
+    my $settings = plugin_setting;
 
     my @errors = keys(%{$results->{$reason}});
     my $errors;
@@ -98,6 +99,7 @@ sub _dfv_check {
 }
 
 sub _init_object_dfv {
+    my $settings     = plugin_setting;
     my $path_file    = $settings->{profile_file} // 'profile.yml';
     my $profile_file = setting('appdir') . '/' . $path_file;
 
@@ -159,7 +161,7 @@ Dancer::Plugin::FormValidator - Easy validates user input (usually from an HTML 
 
 =head1 VERSION
 
-version 1.122350
+version 1.122460
 
 =head1 SYNOPSIS
 
@@ -207,6 +209,7 @@ Example with yml format:
         missing: Not here
 
 Example with json format:
+
     {
         "profile_contact": {
             "required": [
