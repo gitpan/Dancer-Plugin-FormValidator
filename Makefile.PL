@@ -14,8 +14,10 @@ my %WriteMakefileArgs = (
   "BUILD_REQUIRES" => {
     "Dancer::Test" => 0,
     "Data::Dumper" => 0,
+    "JSON::Syck" => 0,
     "Module::Build" => "0.3601",
-    "Test::More" => 0
+    "Test::More" => 0,
+    "YAML::Syck" => 0
   },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30",
@@ -34,7 +36,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.122460",
+  "VERSION" => "1.122610",
   "test" => {
     "TESTS" => "t/*.t"
   }

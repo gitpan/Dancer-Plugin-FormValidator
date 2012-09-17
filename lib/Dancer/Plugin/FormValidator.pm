@@ -8,7 +8,7 @@
 #
 package Dancer::Plugin::FormValidator;
 {
-  $Dancer::Plugin::FormValidator::VERSION = '1.122460';
+  $Dancer::Plugin::FormValidator::VERSION = '1.122610';
 }
 
 use strict;
@@ -161,7 +161,7 @@ Dancer::Plugin::FormValidator - Easy validates user input (usually from an HTML 
 
 =head1 VERSION
 
-version 1.122460
+version 1.122610
 
 =head1 SYNOPSIS
 

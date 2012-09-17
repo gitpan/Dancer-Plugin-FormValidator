@@ -9,8 +9,10 @@ my %module_build_args = (
   "build_requires" => {
     "Dancer::Test" => 0,
     "Data::Dumper" => 0,
+    "JSON::Syck" => 0,
     "Module::Build" => "0.3601",
-    "Test::More" => 0
+    "Test::More" => 0,
+    "YAML::Syck" => 0
   },
   "configure_requires" => {
     "ExtUtils::MakeMaker" => "6.30",
@@ -21,7 +23,7 @@ my %module_build_args = (
     "Natal Ng\303\251tal"
   ],
   "dist_name" => "Dancer-Plugin-FormValidator",
-  "dist_version" => "1.122460",
+  "dist_version" => "1.122610",
   "license" => "perl",
   "module_name" => "Dancer::Plugin::FormValidator",
   "recommends" => {},
