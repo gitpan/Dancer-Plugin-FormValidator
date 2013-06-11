@@ -23,7 +23,7 @@ my %module_build_args = (
     "Natal Ng\303\251tal"
   ],
   "dist_name" => "Dancer-Plugin-FormValidator",
-  "dist_version" => "1.122610",
+  "dist_version" => "1.131620",
   "license" => "perl",
   "module_name" => "Dancer::Plugin::FormValidator",
   "recommends" => {},

@@ -1,5 +1,9 @@
 Revision history for Dancer-Plugin-FormValidator
 
+1.131620  2013-06-11 17:54:22 Europe/Paris
+
+    Use version_for with register_plugin
+
 1.122610  2012-09-17 22:28:13 Europe/Paris
 
     Fix test check if the module is installed

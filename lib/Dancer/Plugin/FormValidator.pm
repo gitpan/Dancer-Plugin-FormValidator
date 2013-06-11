@@ -1,14 +1,14 @@
 #
 # This file is part of Dancer-Plugin-FormValidator
 #
-# This software is copyright (c) 2012 by Natal Ngétal.
+# This software is copyright (c) 2013 by Natal Ngétal.
 #
 # This is free software; you can redistribute it and/or modify it under
 # the same terms as the Perl 5 programming language system itself.
 #
 package Dancer::Plugin::FormValidator;
 {
-  $Dancer::Plugin::FormValidator::VERSION = '1.122610';
+  $Dancer::Plugin::FormValidator::VERSION = '1.131620';
 }
 
 use strict;
@@ -64,7 +64,7 @@ register dfv => sub {
     _dfv_check(@_);
 };
 
-register_plugin;
+register_plugin for_versions => [2];
 
 sub _error_return {
     my $reason   = shift;
@@ -151,8 +151,8 @@ sub _init_object_dfv {
 
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -161,7 +161,7 @@ Dancer::Plugin::FormValidator - Easy validates user input (usually from an HTML 
 
 =head1 VERSION
 
-version 1.122610
+version 1.131620
 
 =head1 SYNOPSIS
 
@@ -320,10 +320,9 @@ Natal Ngétal
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Natal Ngétal.
+This software is copyright (c) 2013 by Natal Ngétal.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
